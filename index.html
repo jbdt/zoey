@@ -55,12 +55,21 @@
             <a href="#" class="text-2xl font-bold text-peach-600 handwritten">
                 <span class="text-pink-400">Zoey's</span> <span class="text-amber-600">Threads</span> 🧶
             </a>
-            <div class="hidden md:flex space-x-8">
-                <a href="#home" class="text-pink-500 hover:text-amber-600 transition">Home</a>
-                <a href="#about" class="hover:text-pink-500 transition">About</a>
-                <a href="#products" class="hover:text-pink-500 transition">Products</a>
-                <a href="#testimonials" class="hover:text-pink-500 transition">Reviews</a>
-                <a href="#contact" class="hover:text-pink-500 transition">Contact</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="text-pink-500 hover:text-amber-600 transition" data-i18n="nav.home">Home</a>
+                <a href="#about" class="hover:text-pink-500 transition" data-i18n="nav.about">About</a>
+                <a href="#products" class="hover:text-pink-500 transition" data-i18n="nav.products">Products</a>
+                <a href="#testimonials" class="hover:text-pink-500 transition" data-i18n="nav.reviews">Reviews</a>
+                <a href="#contact" class="hover:text-pink-500 transition" data-i18n="nav.contact">Contact</a>
+                <div class="relative ml-4">
+                    <select id="language-selector" class="appearance-none bg-white/50 border border-pink-200 rounded-full px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-pink-300">
+                        <option value="en">English</option>
+                        <option value="vi">Tiếng Việt</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-pink-500">
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </div>
+                </div>
             </div>
             <button class="md:hidden focus:outline-none">
                 <i class="fas fa-bars text-xl text-pink-500"></i>
@@ -73,12 +82,12 @@
         <div class="absolute inset-0 bg-gradient-to-b from-pink-50/30 to-amber-50/30 z-0"></div>
         <div class="container mx-auto px-6 py-24 md:py-32 flex flex-col items-center text-center relative z-10">
             <div class="max-w-3xl">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 handwritten text-gray-800">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 handwritten text-gray-800" data-i18n="hero.title">
                     Welcome to <span class="text-pink-400">Zoey's</span> <span class="text-amber-600">Threads</span> ✨
                 </h1>
-                <p class="text-xl md:text-2xl mb-10 text-gray-600">
+                <p class="text-xl md:text-2xl mb-10 text-gray-600" data-i18n="hero.subtitle">
                     Handmade crochet keychains made with love in Vietnam 🇻🇳<br>
-                    <span class="text-lg">Tiny stitches, big smiles. 🧵</span>
+                    <span class="text-lg" data-i18n="hero.tagline">Tiny stitches, big smiles. 🧵</span>
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a href="#products" class="bg-pink-400 hover:bg-pink-500 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105">
@@ -173,11 +182,11 @@
                 <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-[1.02]">
                     <div class="h-64 bg-gradient-to-br from-pink-100 to-amber-100 flex items-center justify-center">
                         <div class="text-center">
-                            <div class="w-24 h-24 mx-auto mb-4 bg-white rounded-full shadow-inner flex items-center justify-center">
-                                <span class="text-4xl">🎋</span>
+                            <div class="w-full h-full flex items-center justify-center">
+                                <img src="f839bdeab8370e695726.jpg" alt="Vietnamese Conical Hat Keychain" class="w-40 h-40 object-cover rounded-lg">
                             </div>
                             <div class="product-info px-4 py-2 bg-white/90 rounded-lg mx-4">
-                                <h3 class="font-bold text-pink-500">Vietnamese Conical Hat</h3>
+                                <h3 class="font-bold text-pink-500">Avocado</h3>
                                 <p class="text-amber-600 font-semibold">120,000₫</p>
                             </div>
                         </div>
@@ -188,11 +197,11 @@
                 <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-[1.02]">
                     <div class="h-64 bg-gradient-to-br from-mint-100 to-lavender-100 flex items-center justify-center">
                         <div class="text-center">
-                            <div class="w-24 h-24 mx-auto mb-4 bg-white rounded-full shadow-inner flex items-center justify-center">
-                                <span class="text-4xl">🇻🇳</span>
+                            <div class="w-full h-full flex items-center justify-center">
+                                <img src="04b2856280bf36e16fae.jpg" alt="Mini Vietnam Flag Keychain" class="w-40 h-40 object-cover rounded-lg">
                             </div>
                             <div class="product-info px-4 py-2 bg-white/90 rounded-lg mx-4">
-                                <h3 class="font-bold text-pink-500">Mini Vietnam Flag</h3>
+                                <h3 class="font-bold text-pink-500">Moon and flower</h3>
                                 <p class="text-amber-600 font-semibold">100,000₫</p>
                             </div>
                         </div>
@@ -203,12 +212,12 @@
                 <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-[1.02]">
                     <div class="h-64 bg-gradient-to-br from-amber-100 to-pink-100 flex items-center justify-center">
                         <div class="text-center">
-                            <div class="w-24 h-24 mx-auto mb-4 bg-white rounded-full shadow-inner flex items-center justify-center">
-                                <span class="text-4xl">🍓</span>
+                            <div class="w-full h-full flex items-center justify-center">
+                                <img src="a14e30aa35778329da66.jpg" alt="Strawberry Keychain" class="w-40 h-40 object-cover rounded-lg">
                             </div>
                             <div class="product-info px-4 py-2 bg-white/90 rounded-lg mx-4">
-                                <h3 class="font-bold text-pink-500">Strawberry Keychain</h3>
-                                <p class="text-amber-600 font-semibold">90,000₫</p>
+                                <h3 class="font-bold text-pink-500">Teddy Bear with bunny</h3>
+                                <p class="text-amber-600 font-semibold">120,000₫</p>
                             </div>
                         </div>
                     </div>
@@ -218,12 +227,12 @@
                 <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-[1.02]">
                     <div class="h-64 bg-gradient-to-br from-lavender-100 to-mint-100 flex items-center justify-center">
                         <div class="text-center">
-                            <div class="w-24 h-24 mx-auto mb-4 bg-white rounded-full shadow-inner flex items-center justify-center">
-                                <span class="text-4xl">🐻</span>
+                            <div class="w-full h-full flex items-center justify-center">
+                                <img src="fbe5f301f6dc408219cd.jpg" alt="Teddy Bear Keychain" class="w-40 h-40 object-cover rounded-lg">
                             </div>
                             <div class="product-info px-4 py-2 bg-white/90 rounded-lg mx-4">
                                 <h3 class="font-bold text-pink-500">Teddy Bear</h3>
-                                <p class="text-amber-600 font-semibold">150,000₫</p>
+                                <p class="text-amber-600 font-semibold">100,000₫</p>
                             </div>
                         </div>
                     </div>
@@ -233,11 +242,11 @@
                 <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-[1.02]">
                     <div class="h-64 bg-gradient-to-br from-pink-100 to-lavender-100 flex items-center justify-center">
                         <div class="text-center">
-                            <div class="w-24 h-24 mx-auto mb-4 bg-white rounded-full shadow-inner flex items-center justify-center">
-                                <span class="text-4xl">🍋</span>
+                            <div class="w-full h-full flex items-center justify-center">
+                                <img src="8fdafc32f9ef4fb116fe.jpg" alt="Lemon Slice Keychain" class="w-40 h-40 object-cover rounded-lg">
                             </div>
                             <div class="product-info px-4 py-2 bg-white/90 rounded-lg mx-4">
-                                <h3 class="font-bold text-pink-500">Lemon Slice</h3>
+                                <h3 class="font-bold text-pink-500">Bunny with carrot</h3>
                                 <p class="text-amber-600 font-semibold">80,000₫</p>
                             </div>
                         </div>
@@ -248,11 +257,11 @@
                 <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-[1.02]">
                     <div class="h-64 bg-gradient-to-br from-amber-100 to-mint-100 flex items-center justify-center">
                         <div class="text-center">
-                            <div class="w-24 h-24 mx-auto mb-4 bg-white rounded-full shadow-inner flex items-center justify-center">
-                                <span class="text-4xl">🐰</span>
+                            <div class="w-full h-full flex items-center justify-center">
+                                <img src="459e8d4888953ecb6784.jpg" alt="Bunny Rabbit Keychain" class="w-40 h-40 object-cover rounded-lg">
                             </div>
                             <div class="product-info px-4 py-2 bg-white/90 rounded-lg mx-4">
-                                <h3 class="font-bold text-pink-500">Bunny Rabbit</h3>
+                                <h3 class="font-bold text-pink-500">Ribbon</h3>
                                 <p class="text-amber-600 font-semibold">140,000₫</p>
                             </div>
                         </div>
@@ -263,11 +272,11 @@
                 <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-[1.02]">
                     <div class="h-64 bg-gradient-to-br from-mint-100 to-pink-100 flex items-center justify-center">
                         <div class="text-center">
-                            <div class="w-24 h-24 mx-auto mb-4 bg-white rounded-full shadow-inner flex items-center justify-center">
-                                <span class="text-4xl">🍄</span>
+                            <div class="w-full h-full flex items-center justify-center">
+                                <img src="6fff7a2e7ff3c9ad90e2.jpg" alt="Mushroom Keychain" class="w-40 h-40 object-cover rounded-lg">
                             </div>
                             <div class="product-info px-4 py-2 bg-white/90 rounded-lg mx-4">
-                                <h3 class="font-bold text-pink-500">Mushroom</h3>
+                                <h3 class="font-bold text-pink-500">Spiral</h3>
                                 <p class="text-amber-600 font-semibold">95,000₫</p>
                             </div>
                         </div>
@@ -278,11 +287,11 @@
                 <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-[1.02]">
                     <div class="h-64 bg-gradient-to-br from-lavender-100 to-amber-100 flex items-center justify-center">
                         <div class="text-center">
-                            <div class="w-24 h-24 mx-auto mb-4 bg-white rounded-full shadow-inner flex items-center justify-center">
-                                <span class="text-4xl">🦄</span>
+                            <div class="w-full h-full flex items-center justify-center">
+                                <img src="5f4593ac9671202f7960.jpg" alt="Unicorn Keychain" class="w-40 h-40 object-cover rounded-lg">
                             </div>
                             <div class="product-info px-4 py-2 bg-white/90 rounded-lg mx-4">
-                                <h3 class="font-bold text-pink-500">Unicorn</h3>
+                                <h3 class="font-bold text-pink-500">Sheep</h3>
                                 <p class="text-amber-600 font-semibold">160,000₫</p>
                             </div>
                         </div>
@@ -538,6 +547,152 @@
     </button>
 
     <script>
+        // Translations object
+        const translations = {
+            en: {
+                // Navigation
+                "nav.home": "Home",
+                "nav.about": "About",
+                "nav.products": "Products",
+                "nav.reviews": "Reviews",
+                "nav.contact": "Contact",
+                
+                // Hero section
+                "hero.title": "Welcome to Zoey's Threads ✨",
+                "hero.subtitle": "Handmade crochet keychains made with love in Vietnam 🇻🇳",
+                "hero.tagline": "Tiny stitches, big smiles. 🧵",
+                "hero.browse": "Browse Keychains 🛍️",
+                "hero.custom": "Custom Orders ✨",
+                
+                // About section
+                "about.title": "The Story Behind Zoey's Threads",
+                "about.para1": "Hi there! I'm Zoey, a 12-year-old Vietnamese craft lover who discovered her passion for crochet during the pandemic. What started as a way to pass time quickly turned into a joyful little business! ✨",
+                "about.para2": "I specialize in creating miniature crochet keychains that celebrate Vietnamese culture (like our iconic nón lá hats 🎋 and flag 🇻🇳), adorable animals 🐻, and seasonal fruits 🍓. Each piece is made stitch by stitch with lots of love and attention to detail.",
+                "about.para3": "My mission is to spread happiness through these tiny handmade treasures. Whether it's brightening someone's keychain or being a cute gift, I hope my creations bring you as much joy as I get from making them!",
+                "about.handmade": "100% Handmade in Vietnam",
+                
+                // Products section
+                "products.title": "Our Adorable Creations",
+                "products.subtitle": "Each keychain is uniquely crafted with soft yarn and meticulous details. Perfect for gifts or treating yourself! 🎁",
+                "products.order": "Order via Instagram",
+                
+                // Testimonials
+                "testimonials.title": "What Our Happy Customers Say",
+                "testimonials.subtitle": "Don't just take our word for it! Here's what people are saying about Zoey's Threads 💖",
+                
+                // Custom orders
+                "custom.title": "Want Something Custom Made Just For You?",
+                "custom.subtitle": "Zoey loves creating unique pieces! Whether it's your favorite animal, a special character, or a personalized gift, she can crochet it for you. 🎨",
+                "custom.how": "How It Works:",
+                "custom.step1": "Send Zoey your idea via Instagram",
+                "custom.step2": "She'll provide a quote and timeline",
+                "custom.step3": "Approve the design and make payment",
+                "custom.step4": "Receive your one-of-a-kind creation!",
+                "custom.quote": "I love bringing people's ideas to life! No request is too small or too quirky.",
+                "custom.request": "Request a Custom Piece",
+                
+                // Contact
+                "contact.title": "Let's Connect!",
+                "contact.subtitle": "Have questions or want to place an order? Reach out to Zoey through these channels:",
+                "contact.message": "Send a Message",
+                "contact.name": "Your Name",
+                "contact.email": "Email Address",
+                "contact.message": "Message",
+                "contact.send": "Send Message",
+                "contact.instagram": "Follow Zoey's Threads on Instagram to see the latest creations, promotions, and behind-the-scenes of her crochet process!",
+                "contact.shipping": "Shipping Information",
+                "contact.ships": "Ships worldwide from Vietnam",
+                "contact.processing": "Processing time: 3-5 business days",
+                "contact.packaging": "Each order comes beautifully packaged with a thank you note!",
+                
+                // Footer
+                "footer.tagline": "Tiny stitches, big smiles.",
+                "footer.copyright": "© 2025 Zoey's Threads – Handmade in Vietnam 🇻🇳",
+                "footer.made": "Made with love, yarn, and lots of coffee ☕"
+            },
+            vi: {
+                // Navigation
+                "nav.home": "Trang chủ",
+                "nav.about": "Giới thiệu",
+                "nav.products": "Sản phẩm",
+                "nav.reviews": "Đánh giá",
+                "nav.contact": "Liên hệ",
+                
+                // Hero section
+                "hero.title": "Chào mừng đến với Zoey's Threads ✨",
+                "hero.subtitle": "Móc khóa len handmade được làm với tình yêu tại Việt Nam 🇻🇳",
+                "hero.tagline": "Những mũi len nhỏ, nụ cười lớn. 🧵",
+                "hero.browse": "Xem móc khóa 🛍️",
+                "hero.custom": "Đặt hàng riêng ✨",
+                
+                // About section
+                "about.title": "Câu chuyện về Zoey's Threads",
+                "about.para1": "Xin chào! Mình là Zoey, một cô bé 12 tuổi yêu thích thủ công tại Việt Nam. Mình bắt đầu đam mê móc len trong đại dịch và giờ đây nó đã trở thành công việc nhỏ đầy niềm vui! ✨",
+                "about.para2": "Mình chuyên làm những chiếc móc khóa len nhỏ xinh về văn hóa Việt Nam (như nón lá 🎋 và cờ tổ quốc 🇻🇳), các con vật dễ thương 🐻 và trái cây theo mùa 🍓. Mỗi sản phẩm đều được làm thủ công tỉ mỉ với thật nhiều tình yêu.",
+                "about.para3": "Mình mong những sản phẩm nhỏ bé này sẽ mang lại niềm vui cho mọi người, dù là để trang trí chìa khóa hay làm quà tặng!",
+                "about.handmade": "100% Handmade tại Việt Nam",
+                
+                // Products section
+                "products.title": "Tác phẩm dễ thương",
+                "products.subtitle": "Mỗi móc khóa được làm thủ công tỉ mỉ từ sợi len mềm mại. Hoàn hảo để làm quà tặng hoặc tự thưởng cho bản thân! 🎁",
+                "products.order": "Đặt hàng qua Instagram",
+                
+                // Testimonials
+                "testimonials.title": "Khách hàng nói gì",
+                "testimonials.subtitle": "Đừng chỉ nghe chúng tôi nói! Đây là những gì mọi người nói về Zoey's Threads 💖",
+                
+                // Custom orders
+                "custom.title": "Bạn muốn đặt hàng riêng?",
+                "custom.subtitle": "Zoey rất thích làm những món đồ độc đáo! Dù là con vật yêu thích, nhân vật đặc biệt hay món quà cá nhân hóa, Zoey đều có thể móc nó cho bạn. 🎨",
+                "custom.how": "Cách thức đặt hàng:",
+                "custom.step1": "Gửi ý tưởng cho Zoey qua Instagram",
+                "custom.step2": "Zoey sẽ báo giá và thời gian hoàn thành",
+                "custom.step3": "Duyệt mẫu và thanh toán",
+                "custom.step4": "Nhận tác phẩm độc nhất của bạn!",
+                "custom.quote": "Mình rất thích biến ý tưởng của mọi người thành hiện thực! Không có yêu cầu nào là quá nhỏ hay quá kỳ lạ cả.",
+                "custom.request": "Đặt hàng riêng",
+                
+                // Contact
+                "contact.title": "Kết nối với chúng tôi!",
+                "contact.subtitle": "Có câu hỏi hoặc muốn đặt hàng? Liên hệ với Zoey qua các kênh sau:",
+                "contact.message": "Gửi tin nhắn",
+                "contact.name": "Tên của bạn",
+                "contact.email": "Địa chỉ email",
+                "contact.message": "Lời nhắn",
+                "contact.send": "Gửi tin nhắn",
+                "contact.instagram": "Theo dõi Zoey's Threads trên Instagram để xem những sản phẩm mới nhất, ưu đãi và quá trình làm ra chúng!",
+                "contact.shipping": "Thông tin giao hàng",
+                "contact.ships": "Giao hàng toàn cầu từ Việt Nam",
+                "contact.processing": "Thời gian xử lý: 3-5 ngày làm việc",
+                "contact.packaging": "Mỗi đơn hàng đều được đóng gói đẹp mắt kèm lời cảm ơn!",
+                
+                // Footer
+                "footer.tagline": "Những mũi len nhỏ, nụ cười lớn.",
+                "footer.copyright": "© 2025 Zoey's Threads – Handmade tại Việt Nam 🇻🇳",
+                "footer.made": "Làm bằng tình yêu, sợi len và rất nhiều cà phê ☕"
+            }
+        };
+
+        // Language switcher
+        document.getElementById('language-selector').addEventListener('change', function() {
+            const lang = this.value;
+            document.documentElement.lang = lang;
+            translatePage(lang);
+        });
+
+        // Translation function
+        function translatePage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        // Initialize with default language
+        translatePage('en');
+
         // Back to top button
         const backToTopButton = document.getElementById('backToTop');
         
